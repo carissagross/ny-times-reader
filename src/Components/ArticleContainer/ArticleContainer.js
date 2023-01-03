@@ -1,21 +1,28 @@
 import React from 'react'
 import './ArticleContainer.css'
+import ArticleCard from '../ArticleCard/ArticleCard'
 
 const ArticleContainer = ({ articles }) => {
-    const articleCards = articles.map(article => {
+    console.log(articles)
+    const cards = articles.map(article => {
         return (
-            <ArticleCards
-            title={article.title}
-            image={article.multimedia[0]}
-            date={article.published_date}
-            key={article.uri}
+            <ArticleCard
+                title={article.title}
+                image={article.multimedia[0].url}
+                date={article.published_date}
+                key={article.uri}
             />
         )
     })
-    return (
-        <div className = 'article-container'>
-            {articleCards}
-        </div>
-    )
+
+    if (articles === undefined) {
+        return <p className='loading'>Articles are loading!</p>
+    } else {
+        return (
+            <div className='article-container'>
+                {cards}
+            </div>
+        )
+    }
 }
 export default ArticleContainer

@@ -1,0 +1,22 @@
+.header {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 15vh;
+    position: fixed;
+    background-color: white;
+    backdrop-filter: blur(5px);
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+}
+
+h1 {
+    font-family: 'Roboto Slab', serif;
+    font-weight: 300;
+}
+
+h2 {
+    font-style: italic;
+    font-family: 'Roboto Slab', serif;
+}

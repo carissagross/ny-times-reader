@@ -13,11 +13,11 @@ class App extends Component {
   }
   componentDidMount = () => {
     getNews()
-    .then(data => this.setState({articles: data}))
+    .then(data => this.setState({articles: data.results}))
     .catch(error => this.setState({error: 'Error loading news articles, please try again!'}))
   }
   render() {
-    console.log(this.state.articles)
+    // console.log(this.state.articles)
     return (
       <main className='news-container'>
         <Header />

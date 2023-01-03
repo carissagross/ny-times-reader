@@ -1,0 +1,12 @@
+.article-card {
+    border-color: hsl(240deg 100% 50%);
+    border-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card-image {
+    height: auto;
+    width: 30vw;
+}

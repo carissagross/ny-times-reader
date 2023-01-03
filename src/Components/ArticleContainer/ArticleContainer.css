@@ -1,0 +1,5 @@
+.article-container {
+    display: grid;
+    grid-template-columns: auto;
+    margin: 0 10%;
+}
