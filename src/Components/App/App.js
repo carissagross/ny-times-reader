@@ -19,7 +19,7 @@ class App extends Component {
   render() {
     // console.log(this.state.articles)
     return (
-      <main className='news-container'>
+      <main className='app'>
         <Header />
         <ArticleContainer articles={this.state.articles} />
       </main>

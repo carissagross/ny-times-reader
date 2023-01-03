@@ -1,5 +1,11 @@
 .article-container {
+    margin-top: 10;
+    height: 70vh;
+    width: 100vw;
+    padding: 20px;
     display: grid;
-    grid-template-columns: auto;
-    margin: 0 10%;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+    justify-items: center;
+    margin-top: 5%;
 }
