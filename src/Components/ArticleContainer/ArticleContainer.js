@@ -19,8 +19,19 @@ const ArticleContainer = ({ articles }) => {
         return <p className='loading'>Articles are loading!</p>
     } else {
         return (
-            <div className='article-container'>
-                {cards}
+            <div className='wrapper'>
+                <div className='search-container'>
+                    <form>
+                        <input
+                            type='text'
+                            placeholder='Search Articles'
+                        />
+                        <button className='search-button'>Search</button>
+                    </form>
+                </div>
+                <div className='article-container'>
+                    {cards}
+                </div>
             </div>
         )
     }

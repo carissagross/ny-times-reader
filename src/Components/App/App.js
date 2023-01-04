@@ -26,7 +26,7 @@ class App extends Component {
       <main className='app'>
         <p className='error'>{this.state.error}</p>
         <Header />
-        <SearchForm />
+        {/* <SearchForm /> */}
         <Route exact path='/' render={() => <ArticleContainer articles={this.state.articles} />} />
 
         <Route exact path='/:title' render={({ match }) => {
