@@ -1,17 +1,20 @@
 import React from 'react'
 import './ArticleDetails.css'
 
-const ArticleDetails = ({ articles }) => {
+const ArticleDetails = ({ article }) => 
+{
+    console.log({article})
+
     return (
         <section className='details-container'>
             <div className='article-details'>
-                <p className='article-title'>{articles.title}</p>
-                <p className='article-byline'>{articles.byline}</p>
-                <p className='description'>{articles.abstract}</p>
-                <button className='article-url'>{articles.url}</button>
+                <p className='article-title'>{article.title}</p>
+                <p className='article-byline'>{article.byline}</p>
+                <p className='description'>{article.abstract}</p>
+                <button className='article-url'>{article.url}</button>
             </div>
             <div className='image-wrapper'>
-                <img src={articles.multimedia[0].uri} alt={articles.title} />
+                <img src={article.uri} alt={article.title} />
             </div>
             <button>Home</button>
         </section>

@@ -10,7 +10,7 @@ const ArticleContainer = ({ articles }) => {
                 title={article.title}
                 image={article.multimedia[0].url}
                 date={article.published_date}
-                key={article.uri}
+                key={article.url}
             />
         )
     })

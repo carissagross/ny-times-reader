@@ -5,7 +5,7 @@
     flex-direction: column;
     align-items: center;
     margin-bottom: 5%;
-    width: 40vw;
+    width: 25vw;
     height: 30vh;
 }
 
@@ -22,7 +22,6 @@
     transition: transform 400ms;
 }
 
-
 /* .card-image {
     height: auto;
     width: 20vw;
@@ -30,7 +29,15 @@
 
 h3 {
     font-family: 'Roboto Slab', serif;
-    font-size: 20px;
+    font-size: 18px;
+    font-weight: 400;
+    color: rgb(9, 35, 7);
+    font-weight: bold;
+}
+
+.article-date {
+    font-family: 'Roboto Slab', serif;
+    font-size: 18px;
     font-weight: 200;
     color: rgb(9, 35, 7);
 }
