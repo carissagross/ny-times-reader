@@ -4,6 +4,7 @@ import './App.css';
 import Header from '../Header/Header'
 import ArticleContainer from '../ArticleContainer/ArticleContainer'
 import ArticleDetails from '../ArticleDetails/ArticleDetails'
+import SearchForm from '../SearchForm/SearchForm'
 import { getNews } from '../../apiCalls'
 
 class App extends Component {
@@ -19,14 +20,17 @@ class App extends Component {
       .then(data => this.setState({ articles: data.results }))
       .catch(error => this.setState({ error: 'Error loading news articles, please try again!' }))
   }
+
   render() {
     return (
       <main className='app'>
         <p className='error'>{this.state.error}</p>
         <Header />
-        <ArticleContainer articles={this.state.articles} />
-        <Route exact path='/:date' render={({ match }) => {
-          const singleArticle = this.state.articles.find(article => article.published_date === match.params.date)
+        <SearchForm />
+        <Route exact path='/' render={() => <ArticleContainer articles={this.state.articles} />} />
+
+        <Route exact path='/:title' render={({ match }) => {
+          const singleArticle = this.state.articles.find(article => article.title === match.params.title)
           return <ArticleDetails article={singleArticle} />
         }} />
       </main>

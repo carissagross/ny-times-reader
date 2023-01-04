@@ -1,0 +1,23 @@
+.search-container {
+    width: 100vw;
+    height: 3vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+input {
+    width: 8vw;
+    height: 1vh;
+    margin: 8px;
+}
+
+.search-button, .search-button:hover {
+    width: 4vw;
+    font-family: 'Roboto Slab', serif;
+    font-weight: 300;
+    cursor: pointer;
+}
+
+

@@ -11,10 +11,10 @@ const ArticleDetails = ({ article }) =>
                 <p className='article-title'>{article.title}</p>
                 <p className='article-byline'>{article.byline}</p>
                 <p className='description'>{article.abstract}</p>
-                <button className='article-url'>{article.url}</button>
+                <p className='article-url'>{article.url}</p>
             </div>
             <div className='image-wrapper'>
-                <img src={article.uri} alt={article.title} />
+                <img src={article.multimedia[0].url} alt={article.title} />
             </div>
             <button>Home</button>
         </section>
