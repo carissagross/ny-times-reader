@@ -3,13 +3,14 @@
     flex-direction: column;
     width: 100vw;
     height: 12vh;
-    background-color:rgb(181, 181, 181);
+    background-color:rgb(9, 35, 7);
     backdrop-filter: blur(5px);
     align-items: center;
     justify-content: center;
     z-index: 1;
     border-bottom-style: double;
     border-bottom-width: 8px;
+    border-color: white;
 }
 
 h1 {
@@ -17,10 +18,13 @@ h1 {
     font-weight: 300;
     font-size: 50px;
     margin-bottom: 0;
+    color: white;
 }
 
 h2 {
     font-style: italic;
     font-family: 'Roboto Slab', serif;
     font-size: 30px;
+    font-weight: 300;
+    color: white;
 }

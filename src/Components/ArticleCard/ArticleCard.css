@@ -9,9 +9,9 @@
     height: 30vh;
 }
 
-/* .article-wrapper {
-    width: 100%;
-    height: 400px;
+.article-wrapper {
+    width: 20vw;
+    height: 20vh;
     overflow: hidden;
 }
 
@@ -20,10 +20,17 @@
     height: 100%;
     object-fit: cover;
     transition: transform 400ms;
-} */
+}
 
 
-.card-image {
+/* .card-image {
     height: auto;
     width: 20vw;
+} */
+
+h3 {
+    font-family: 'Roboto Slab', serif;
+    font-size: 20px;
+    font-weight: 200;
+    color: rgb(9, 35, 7);
 }

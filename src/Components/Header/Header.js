@@ -6,6 +6,7 @@ const Header = () => {
         <div className='header'>
             <h1>NEW YORK TIMES</h1>
             <h2>News Reader</h2>
+            {/* <p className='date'>Date.now()</p> */}
         </div>
     )
 }

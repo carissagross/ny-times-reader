@@ -8,18 +8,20 @@ class App extends Component {
   constructor() {
     super()
     this.state = {
-      articles: []
+      articles: [],
+      error: ''
     }
   }
   componentDidMount = () => {
     getNews()
-    .then(data => this.setState({articles: data.results}))
-    .catch(error => this.setState({error: 'Error loading news articles, please try again!'}))
+      .then(data => this.setState({ articles: data.results }))
+      .catch(error => this.setState({ error: 'Error loading news articles, please try again!' }))
   }
   render() {
     // console.log(this.state.articles)
     return (
       <main className='app'>
+        <p className='error'>{this.state.error}</p>
         <Header />
         <ArticleContainer articles={this.state.articles} />
       </main>
