@@ -15,7 +15,7 @@
 ## Features
 - Users can view all articles on the homepage
 - Users can sort the artlices by article title
-- Cuseres can click to view more details of each article including a link to view the full article on the New York Times website.
+- Users can click to view more details of each article including a link to view the full article on the New York Times website.
 <img width="1619" alt="Screenshot 2023-01-05 at 9 05 04 AM" src="https://user-images.githubusercontent.com/83977544/210826250-a8a1f56d-5e46-47e7-b164-9ae8657ab053.png">
 
 ## Future Extensions
@@ -24,6 +24,9 @@
 - Utilize React Hooks
 
 ## Set Up
+git clone git@github.com:carissagross/ny-times-reader.git
+npm install
+npm start
 
 ## Organizational Resources
 - [Wireframe](https://www.figma.com/file/Pl6N8ibZkeORihFOwlbcPM/NY-Times-News-Reader?node-id=0%3A1&t=HDnAL9omv8ufNa2w-0)
