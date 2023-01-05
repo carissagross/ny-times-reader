@@ -1,4 +1,4 @@
-/* .search-container {
+.search-container {
     width: 100vw;
     height: 3vh;
     display: flex;
@@ -8,8 +8,8 @@
 }
 
 input {
-    width: 8vw;
-    height: 1vh;
+    width: 20vw;
+    height: 2vh;
     margin: 8px;
 }
 
@@ -18,6 +18,6 @@ input {
     font-family: 'Roboto Slab', serif;
     font-weight: 300;
     cursor: pointer;
-} */
+}
 
 

@@ -12,9 +12,15 @@ class App extends Component {
     super()
     this.state = {
       articles: [],
+      searchForm: '',
       error: ''
     }
   }
+
+  searchForArticle = (input) => {
+    this.setState({searchForm: input})
+  }
+
   componentDidMount = () => {
     getNews()
       .then(data => this.setState({ articles: data.results }))
@@ -26,9 +32,9 @@ class App extends Component {
       <main className='app'>
         <p className='error'>{this.state.error}</p>
         <Header />
-        {/* <SearchForm /> */}
-        <Route exact path='/' render={() => <ArticleContainer articles={this.state.articles} />} />
-
+        <Route exact path='/' component={SearchForm} searchForArticle={this.searchForArticle} />
+        {/* <SearchForm searchForArticle={this.searchForArticle} /> */}
+        <Route exact path='/' render={() => <ArticleContainer articles={this.state.articles} searchForm={this.state.searchForm} />} />
         <Route exact path='/:title' render={({ match }) => {
           const singleArticle = this.state.articles.find(article => article.title === match.params.title)
           return <ArticleDetails article={singleArticle} />
