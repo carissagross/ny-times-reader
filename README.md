@@ -27,6 +27,7 @@
 
 ## Organizational Resources
 - [Wireframe](https://www.figma.com/file/Pl6N8ibZkeORihFOwlbcPM/NY-Times-News-Reader?node-id=0%3A1&t=HDnAL9omv8ufNa2w-0)
+- [Project Board](https://github.com/users/carissagross/projects/7/views/1)
 
 ## Sources
 - MDN
