@@ -30,13 +30,13 @@ class App extends Component {
   render() {
     return (
       <main className='app'>
-        <p className='error'>{this.state.error}</p>
         <Header />
         <Route exact path='/' component={SearchForm} searchForArticle={this.searchForArticle} />
         {/* <SearchForm searchForArticle={this.searchForArticle} /> */}
+        <p className='error'>{this.state.error}</p>
         <Route exact path='/' render={() => <ArticleContainer articles={this.state.articles} searchForm={this.state.searchForm} />} />
-        <Route exact path='/:title' render={({ match }) => {
-          const singleArticle = this.state.articles.find(article => article.title === match.params.title)
+        <Route exact path='/:published_date' render={({ match }) => {
+          const singleArticle = this.state.articles.find(article => article.published_date === match.params.published_date)
           return <ArticleDetails article={singleArticle} />
         }} />
       </main>
