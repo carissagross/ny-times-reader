@@ -2,6 +2,25 @@
   text-align: center;
 }
 
+button {
+  width: 4vw;
+  font-family: 'Roboto Slab', serif;
+  font-weight: 300;
+  cursor: pointer;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+button:hover {
+  width: 4vw;
+  font-family: 'Roboto Slab', serif;
+  font-weight: 300;
+  cursor: pointer;
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
