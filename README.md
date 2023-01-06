@@ -27,9 +27,9 @@
 - Utilize React Hooks
 
 ## Set Up
-git clone git@github.com:carissagross/ny-times-reader.git
-npm install
-npm start
+1. git clone git@github.com:carissagross/ny-times-reader.git
+2. npm install
+3. npm start
 
 ## Organizational Resources
 - [Wireframe](https://www.figma.com/file/Pl6N8ibZkeORihFOwlbcPM/NY-Times-News-Reader?node-id=0%3A1&t=HDnAL9omv8ufNa2w-0)
